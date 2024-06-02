@@ -35,6 +35,7 @@ If you don't have a project yet, create a new Console App (.NET Core or .NET Fra
 
 Here is an example code snippet to demonstrate this in C#
 
+```
 using System;
 using S7.Net;  // Make sure to add this using directive
 
@@ -90,7 +91,7 @@ namespace PLCConnectionExample
         }
     }
 }
-
+```
 
 # Explanation:
  1. Plc Class: Represents the connection to the PLC.
