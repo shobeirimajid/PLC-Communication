@@ -18,10 +18,15 @@ If you don't have a project yet, create a new Console App (.NET Core or .NET Fra
 3. Write Code to Connect to the PLC:
 
 . Add the necessary using directives at the top of your file.
+
 . Create an instance of the Plc class.
+
 . Connect to the PLC using the Open() method.
+
 . Read and write data as needed.
+
 . Close the connection when done.
+
 
 # Sample Code
 
