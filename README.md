@@ -8,6 +8,7 @@ To connect to a Siemens S7-1500 PLC using C#, you can utilize the S7.Net library
 1. Install the S7.NetPlus Library:
 
 You can open your C# project in Visual Studio.
+
 Open the NuGet Package Manager Console and run the following command:
 Install-Package S7.NetPlus
 
@@ -17,15 +18,15 @@ If you don't have a project yet, create a new Console App (.NET Core or .NET Fra
 
 3. Write Code to Connect to the PLC:
 
-. Add the necessary using directives at the top of your file.
+ - Add the necessary using directives at the top of your file.
 
-. Create an instance of the Plc class.
+ - Create an instance of the Plc class.
 
-. Connect to the PLC using the Open() method.
+ - Connect to the PLC using the Open() method.
 
-. Read and write data as needed.
+ - Read and write data as needed.
 
-. Close the connection when done.
+ - Close the connection when done.
 
 
 # Sample Code
@@ -33,6 +34,7 @@ If you don't have a project yet, create a new Console App (.NET Core or .NET Fra
 Here is an example code snippet to demonstrate this in C#
 
 using System;
+
 using S7.Net;  // Make sure to add this using the directive
 
 namespace PLCConnectionExample
@@ -96,7 +98,7 @@ namespace PLCConnectionExample
  5. Write Method: Writes data to the PLC. You need to specify the data block and address, and the value to write.
  6. Close Method: Closes the connection to the PLC.
 
-# Notes:
+> [!TIP]
  1. Ensure the IP address, CPU type, rack, and slot numbers are correctly set for your PLC configuration.
  2. Proper exception handling is included to manage connection errors.
  3. Always close the PLC connection to free resources.
