@@ -107,10 +107,13 @@ namespace PLCConnectionExample
  2. Proper exception handling is included to manage connection errors.
  3. Always close the PLC connection to free resources.
  4. This example should help you get started with connecting and communicating with a Siemens S7-1500 PLC using C#.
+ 5. The thing is that on the PLC system, the length of the string is always reserved in memory, so you just need to explicitly read the first 2 bytes in the DB containing your string as an unsigned 16-bit integer. It stores the current actual length of your string.
 
 
 # References
 https://github.com/S7NetPlus/s7netplus
+
+https://github.com/S7NetPlus/s7netplus/wiki
 
 https://www.nuget.org/packages/S7netplus/
 
@@ -119,3 +122,25 @@ https://github.com/S7NetPlus/s7netplus/wiki
 https://www.ad.siemens.com.cn/club/bbs/upload/file/20181129/6367911382823920496914596.pdf
 
 https://www.youtube.com/playlist?list=PLRCEJ0bGSS1ZlU34IXsIKS62IHH5FcgU1
+
+https://gist.github.com/rapha-dev/f3cd66f69e6d141d2842008335db912c
+
+https://github.com/S7NetPlus/s7netplus/issues/105
+
+https://github.com/S7NetPlus/s7netplus/blob/9fd515280a4fe29ad41ce3d26eacdfd7866aeeb4/S7.Net.UnitTest/S7NetTests.cs#L211
+
+https://github.com/S7NetPlus/s7netplus/blob/9fd515280a4fe29ad41ce3d26eacdfd7866aeeb4/S7.Net.UnitTest/S7NetTests.cs#L211
+
+https://github.com/S7NetPlus/s7netplus/blob/9fd515280a4fe29ad41ce3d26eacdfd7866aeeb4/S7.Net.UnitTest/Helpers/TestLongStruct.cs#L11
+
+https://snap7.sourceforge.net/sharp7.html
+
+https://www.mesta-automation.com/how-to-write-a-siemens-s7-plc-driver-with-c-and-sharp7/
+
+https://snap7.sourceforge.net/
+
+https://sourceforge.net/projects/snap7/files/Sharp7/
+
+
+
+
